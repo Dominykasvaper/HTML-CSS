@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #fa4299;
+        display: flex;
+        justify-content: center;
+        margin-top: 150px;
+    }
+
+    .conteiner {
+        width: 300px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+    }
+
+    .buttonas {
+        width: 150px;
+        padding: 10px;
+        background-color: #fff;
+        margin-bottom: 20px;
+        border: 0.5px solid rgba(128, 128, 128, 0.76);
+        font-size: 18px;
+    }
+
+    .login-border-right a,
+    .login-big a {
+        color: #fff;
+    }
+
+    .forgot {
+        font-size: 14px;
+        color: #fa4299;
+        padding-top: 1px;
+    }
+
+    .login-big {
+        background-color: #fa4299;
+        border: 0;
+        padding: 15px;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 2px;
+        margin-top: 20px;
+    }
+
+    .last-line {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    div .login .login-border-right {
+        border-right: 0;
+        background-color: #fa4299;
+        color: #fff;
+    }
+
+    input[type="email"], input[type="password"] {
+        font-size: 17px;
+        padding: 5px;
+        border: 0.5px solid rgba(128, 128, 128, 0.76);
+    }
+
+    input[type="email"] {
+        margin-bottom: 15px;
+    }
+
+    span a {
+        color: #fa4299;
+    }
+
+</style>
+
+<body>
+    <div class="conteiner">
+        <h2>Login Form</h2>
+        <div class="login">
+            <button class="buttonas login-border-right"><a href="#">Login</a></button>
+            <button class="buttonas"><a href="">Signup</a></button>
+        </div>
+        <input type="email" placeholder="Email Address" id="email">
+        <input type="password" placeholder="Password" class="password">
+        <div> <a href="" class="forgot">Forgot password?</a></div>
+        <button class="login-big"><a href="">Login</a></button>
+        <div class="last-line">
+            <p>Not a memeber?<span><a href="">Signup now</a></span></p>
+        </div>
+    </div>
+</body>
+
+</html>
