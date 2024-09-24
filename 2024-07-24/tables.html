@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+    
+    .table {
+   /* border: 1px solid black;*/
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+ 
+    }
+    .table1 {
+   /* border: 1px solid black;*/
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-collapse: collapse;
+    width: 500px;
+ 
+    }
+
+    td {
+   
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    background-color: gray;
+    
+    }
+
+    .rowHeight {
+        height: 80px;
+    }
+
+    </style>
+
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <td colspan="2">1</td>  
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+      </tr>
+
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td colspan="2">4</td>
+        
+      </tr>
+
+      <tr class="rowHeight">
+        <td>1</td>
+        <td colspan="4">2</td>
+        
+      </tr>
+
+      <tr>
+        <td rowspan="2">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td rowspan="2">5</td>
+      </tr>
+
+      <tr>
+        
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        
+      </tr>
+
+
+    </table>
+
+    <p>
+        <strong>Loren ipsum dolor sit amet consectetur adipisicing elit.</strong> Porro reiciendis soluta placeat ex iste quisquam, enim, a laudantium rerum tenetur, suscipit repellendus? Perferendis, ratione nam.
+
+    </p>
+
+    <table class="table1">
+        <thead>
+    <tr>
+        <td>Krovinio numeris</td>
+        <td>Krovinio pavadinimas</td>
+        <td>Mato vienetas</td>
+        <td>Kaina</td>
+    </tr>
+    </thead>
+
+    <tr>
+        <td>0001</td>
+        <td>Krovinio pavadinimas</td>
+        <td>Mato vienetas</td>
+        <td>Kaina</td>
+    </tr>
+
+    <tr>
+        <td>0002</td>
+        <td>Televizoriai</td>
+        <td>1</td>
+        <td>2000</td>
+    </tr>
+
+    <tr>
+        <td>0003</td>
+        <td>Televizoriai</td>
+        <td>1</td>
+        <td>2000</td>
+    </tr>
+
+    </tr>
+  </body>
+</html>
