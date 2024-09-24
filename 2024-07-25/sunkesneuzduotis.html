@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #3c373e;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 70%;
+        max-width: 1150px;
+        text-align: left;
+        color: #77776d;
+        font-family: "Roboto", sans-serif;
+      }
+
+      th, td {
+        padding: 5px 5px 0px 5px;
+        line-height: 2.2;
+        vertical-align: top;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0.1rem;
+      }
+
+      th {
+        padding: 8px;
+        font-size: 14px;
+      }
+
+      .JamesYates, .SampsonMurphy, .MatthewWasil, .GasparSemenov {
+        background-color: #39343b;
+      }
+
+      .Tekstas {
+        color: white;
+        font-size: 18px;
+      }
+
+      .SpalvaTeksto th {
+        color: white;
+        line-height: 100px;
+        letter-spacing: 0.3rem;
+      }
+
+      .hover:hover th {
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      .hover:hover th:nth-child(2), .hover:hover th:nth-child(6) {
+        color: yellow;
+      }
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th class="Tekstas">Table#6</th>
+        </tr>
+        <tr class="SpalvaTeksto">
+          <th>ORDER</th>
+          <th>NAME</th>
+          <th>OCCUPATION</th>
+          <th>CONTACT</th>
+          <th>EDUCATION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="JamesYates hover">
+          <th>1392</th>
+          <th>James Yates</th>
+          <th>
+            Web Designer
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+63 983 0962 971</th>
+          <th>NY University</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="hover">
+          <th>4616</th>
+          <th>Matthew Wasil</th>
+          <th>
+            Graphic Designer
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+02 020 3994 929</th>
+          <th>London College</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="SampsonMurphy hover">
+          <th>9841</th>
+          <th>Sampson Murphy</th>
+          <th>
+            Mobile Dev
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+01 352 1125 0192</th>
+          <th>Senior High</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="hover">
+          <th>9548</th>
+          <th>Gaspar Semenov</th>
+          <th>
+            Illustrator
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+92 020 3994 929</th>
+          <th>College</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="MatthewWasil hover">
+          <th>4616</th>
+          <th>Matthew Wasil</th>
+          <th>
+            Graphic Designer
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+02 020 3994 929</th>
+          <th>London College</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="hover">
+          <th>9841</th>
+          <th>Sampson Murphy</th>
+          <th>
+            Mobile Dev
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+01 352 1125 0192</th>
+          <th>Senior High</th>
+          <th>DETAILS</th>
+        </tr>
+
+        <tr class="GasparSemenov hover">
+          <th>9548</th>
+          <th>Gaspar Semenov</th>
+          <th>
+            Illustrator
+            <br />
+            <div style="position: relative; top: -10px; letter-spacing: 0px">
+              <span style="font-weight: normal">Far far away, behind the word mountains</span>
+            </div>
+          </th>
+          <th>+92 020 3994 929</th>
+          <th>College</th>
+          <th>DETAILS</th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
