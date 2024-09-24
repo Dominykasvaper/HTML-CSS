@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Scroll animacijos priskyrimas */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            padding: 10px 0;
+        }
+
+        ul {
+            /* reset priskyrimas */
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            /* išrikiavimo priskyrimas */
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        section {
+            height: 800px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        a {
+          color: black;
+          text-decoration: none;
+        }
+
+
+        a:hover {
+            color: red;
+        }
+
+        
+        a:active {
+            color: green;
+        }
+
+
+        #home {
+            background: black url('https://images.wallpaperscraft.com/image/single/apple_drops_black_background_118624_1920x1080.jpg') no-repeat center center / cover;
+        }
+
+        #about-us {
+            background: black url('https://images.wallpaperscraft.com/image/single/berries_branches_dark_1062640_1920x1080.jpg') no-repeat center center / cover;
+            flex-direction: row-reverse;
+        }
+
+        #history {
+            background: black url('https://images.wallpaperscraft.com/image/single/sakura_spring_buds_1255771_1920x1080.jpg') no-repeat center center / cover;
+        }
+
+        #career {
+            background: black url('https://images.wallpaperscraft.com/image/single/drops_water_surface_1276924_1920x1080.jpg') no-repeat center center / cover;
+        }
+
+        #contacts {
+            background: black url('https://images.wallpaperscraft.com/image/single/petals_buds_flowers_1247717_1920x1080.jpg') no-repeat center center / cover;
+            flex-direction: row-reverse;
+        }
+
+        .description {
+            width: 700px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="https://www.tailorbrands.com/wp-content/uploads/2021/01/apple_logo_1988.jpg" alt="" width="150">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="image">
+            <img src="https://images.wallpaperscraft.com/image/single/construction_bridge_architecture_1266681_1920x1080.jpg" alt="" width="300">
+        </div>
+        <div class="description">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur dolor excepturi officia magni eligendi. Adipisci aspernatur aliquam molestiae est!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero sed explicabo, ut eveniet illo voluptates molestias provident dolores eos sunt nemo cum, quae sit aliquam consequuntur eius perferendis unde! Doloribus deleniti cupiditate magni, itaque maiores aperiam animi ea repudiandae amet quia eius incidunt nostrum temporibus, eum in, quaerat inventore.</p>
+        </div>
+    </section>
+
+
+    <section id="about-us">
+        <div class="image">
+            <img src="https://images.wallpaperscraft.com/image/single/traffic_lights_street_inscriptions_1268527_1920x1080.jpg" alt="" width="500">
+        </div>
+        <div class="description">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur dolor excepturi officia magni eligendi. Adipisci aspernatur aliquam molestiae est!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero sed explicabo, ut eveniet illo voluptates molestias provident dolores eos sunt nemo cum, quae sit aliquam consequuntur eius perferendis unde! Doloribus deleniti cupiditate magni, itaque maiores aperiam animi ea repudiandae amet quia eius incidunt nostrum temporibus, eum in, quaerat inventore.</p>
+        </div>
+    </section>
+
+
+    <section id="history">
+        <div class="image">
+            <img src="https://images.wallpaperscraft.com/image/single/road_cars_buildings_1267727_1920x1080.jpg" alt="" width="500">
+        </div>
+        <div class="description">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur dolor excepturi officia magni eligendi. Adipisci aspernatur aliquam molestiae est!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero sed explicabo, ut eveniet illo voluptates molestias provident dolores eos sunt nemo cum, quae sit aliquam consequuntur eius perferendis unde! Doloribus deleniti cupiditate magni, itaque maiores aperiam animi ea repudiandae amet quia eius incidunt nostrum temporibus, eum in, quaerat inventore.</p>
+        </div>
+    </section>
+
+
+    <section id="career">
+        <div class="image">
+            <img src="https://images.wallpaperscraft.com/image/single/road_cars_buildings_1277798_1920x1080.jpg" alt="" width="600">
+        </div>
+        <div class="description">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur dolor excepturi officia magni eligendi. Adipisci aspernatur aliquam molestiae est!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero sed explicabo, ut eveniet illo voluptates molestias provident dolores eos sunt nemo cum, quae sit aliquam consequuntur eius perferendis unde! Doloribus deleniti cupiditate magni, itaque maiores aperiam animi ea repudiandae amet quia eius incidunt nostrum temporibus, eum in, quaerat inventore.</p>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="image">
+            <img src="https://images.wallpaperscraft.com/image/single/road_cars_buildings_1277798_1920x1080.jpg" alt="" width="600">
+        </div>
+        <div class="description">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, consequatur dolor excepturi officia magni eligendi. Adipisci aspernatur aliquam molestiae est!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores libero sed explicabo, ut eveniet illo voluptates molestias provident dolores eos sunt nemo cum, quae sit aliquam consequuntur eius perferendis unde! Doloribus deleniti cupiditate magni, itaque maiores aperiam animi ea repudiandae amet quia eius incidunt nostrum temporibus, eum in, quaerat inventore.</p>
+        </div>
+    </section>
+</body>
+</html>
