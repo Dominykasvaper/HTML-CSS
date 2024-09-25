@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            background-image: url(https://images.wallpaperscraft.com/image/single/astronaut_portal_neon_141352_1920x1080.jpg);
+        }
+        .content-wrapper {
+            height: 100vh;
+            width: 1600px; 
+            position: relative; 
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+        .nuotrauka {
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left: 0;
+        }
+        .nuotrauka1 {
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            top: 450px;
+            left: 0;
+        }
+        .nuotrauka2 {
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left: 1076px;
+        }
+        .nuotrauka3 {
+            height: 650px;
+            width: 500px;
+            position: absolute;
+            top: 100px;
+            left: 538px;
+        }
+        .nuotrauka4 {
+            height: 300px;
+            width: 500px;
+            position: absolute;
+            top: 450px;
+            left: 1076px;
+        }
+        .box1 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 278px;
+            width: 470px;
+            display: flex;
+        }
+        .box2 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 0;
+            top: 628px;
+            width: 470px;
+            display: flex;
+        }
+        .box3 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 538px;
+            top: 600px;
+            width: 470px;
+            height: 150px;
+            display: flex;
+        }
+        .box4 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 1076px;
+            top: 278px;
+            width: 470px;
+            display: flex;
+        }
+        .box5 {
+            background-color: black;
+            color: white;
+            position: absolute;
+            left: 1076px;
+            top: 628px;
+            width: 470px;
+            display: flex;
+        }
+        .box p, .box1 p, .box2 p, .box3 p, .box4 p, .box5 p {
+            line-height: 30px;
+            padding-left: 20px;
+            font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        .box3 p {
+            margin-top: 50px;
+        }
+        .finalbox p:nth-child(1) {
+            background-color: red;
+            position: absolute;
+            top: 600px;
+            left: 558px;
+            width: 90px;
+            color: white;
+            font-weight: 500;
+        }
+        .finalbox p:nth-child(2) {
+            background-color: blue;
+            position: absolute;
+            top: 600px;
+            left: 698px;
+            width: 90px;
+            color: white;
+            font-weight: 500;
+        }
+        .video {
+            position: relative;
+             top: 740px;
+        }
+        button {
+            position: relative;
+            top: 50px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="box">
+            <img class="nuotrauka" src="https://preview.colorlib.com/theme/miniblog/images/img_1.jpg.webp" alt="">
+            <img class="nuotrauka1" src="https://preview.colorlib.com/theme/miniblog/images/img_2.jpg.webp" alt="">
+            <img class="nuotrauka2" src="https://preview.colorlib.com/theme/miniblog/images/img_3.jpg.webp" alt="">
+            <img class="nuotrauka3" src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2020-06/angry_chihuahua.png?itok=TWxYDbOT" alt="">
+            <img class="nuotrauka4" src="https://www.londonlibrary.co.uk/images/20210408113322.JPG" alt="">
+            
+            <div class="box1">
+                <p>The AI magically removes moving <br>objects from videos.<br> <span style="color: gray;">July 19, 2019</span></p>
+            </div>
+            <div class="box2">
+                <p>The AI magically removes moving <br>objects from videos.<br> <span style="color: gray;">July 19, 2019</span></p>
+            </div>
+            <div class="box3">
+                <p>The AI magically removes moving <br>objects from videos.<br> <span style="color: gray;">July 19, 2019</span></p>
+            </div>
+            <div class="box4">
+                <p>The AI magically removes moving <br>objects from videos.<br> <span style="color: gray;">July 19, 2019</span></p>
+            </div>
+            <div class="box5">
+                <p>The AI magically removes moving <br>objects from videos.<br> <span style="color: gray;">July 19, 2019</span></p>
+            </div>
+            <div class="finalbox">
+                <p><span style="margin-left: 7px;">TRAVEL</span></p>
+                <p><span style="margin-left: 13px;">FOOD</span></p>
+
+                <button onclick="playAudio()" type="button">Play music</button>
+                <button onclick="pauseAudio()" type="button">Pause music</button> 
+                <audio id="music">
+                    <source src="dexter.mp3" type="audio/mpeg">
+                  </audio>
+
+                <div class="video">
+                <video  width="900" height="500" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    <source src="video.ogg" type="video/ogg">
+                  </video>
+                  
+                <script>
+                    var x = document.getElementById("music"); 
+                    function playAudio() { 
+                      x.play(); 
+                    } 
+                    function pauseAudio() { 
+                      x.pause(); 
+                    } 
+                    </script>
+
+                </div>
+            </div>
+        </div>
+       
+    </div>
+   
+        
+</body>
+</html>
