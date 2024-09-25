@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            width: 768px;
+            height: 809px;
+            margin: 0;
+            overflow: hidden;
+            background-image: url(nuotraukos/background.png);
+            background-size: cover;
+        }
+        .container {
+            justify-content: center;
+            height: 120%;
+            width: 100%;
+         
+        }
+        .box {
+            background-color: white;
+            height: 95%;
+            width: 60%;
+            border-radius: 50px;
+            border: solid black 1px;
+            position: relative;
+        }
+        .green {
+            background-color: #6DE1C2;
+            height: 100%;
+            width: 30%;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 70%;
+            position: absolute;
+        }
+        .map {
+            width: 100%;
+            height: auto;
+            max-height: 90%;
+        }
+        .map1 {
+            height: 80px;
+            width: 120px; 
+            background-color: white;
+            color: #0982FE;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            border-radius: 10px;
+            border: solid black 1px;
+            position: absolute; 
+            right: 20px; 
+            top: 40px; 
+            font-size: 12px;
+            line-height: 5px;
+            padding-left: 8px;
+        }
+        .map1 p:nth-child(1) {
+            font-weight: 500;
+        }
+        .map1 p:nth-child(2) {
+            font-weight: 700;
+        }
+        .maintext {
+            position: relative;
+        }
+        .text {
+            position: absolute;
+            font-size: 20px;
+            top: 10%;
+            left: 10%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 2px;
+        }
+        .text span {
+            color: #6de1c2;
+        }
+        .text1 {
+            width: 100%; 
+            text-align: left;
+            font-size: 16px;
+        }
+        .kontaktai, .kontaktai1, .kontaktai2, .kontaktai3, .kontaktai4, .kontaktai5, .kontaktai6 {
+            position: absolute;
+            left: 10%;
+        }
+        .kontaktai { top: 35%; }
+        .kontaktai1 { top: 40%; }
+        .kontaktai2 { top: 45%; }
+        .kontaktai3 { top: 50%; left: 40%; }
+        .kontaktai4 { top: 50%; }
+        .kontaktai5 { top: 55%; }
+        .kontaktai6 { top: 60%; }
+        .lentele hr {
+            width: 100%;
+        }
+        .lentele p {
+            margin: 0;
+            color: gray;
+        }
+        .upload {
+            width: 60%;
+            height: 100px;
+            position: absolute;
+            bottom: 25%;
+            left: 10%;
+            text-align: center;
+            border-style: dotted;
+        }
+        .attach {
+            position: absolute;
+            bottom: 22%;
+            left: 5%;
+            color: gray;
+            font-size: 12px;
+        }
+        .attach1 {
+            position: absolute;
+            bottom: 19%;
+            left: 5%;
+            color: gray;
+            font-size: 12px;
+        }
+        .small-box {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            bottom: 18%;
+            left: 5%;
+            background-color: white;
+            border: solid black 1px;
+        }
+        button {
+            width: 90%;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            bottom: 10%;
+            left: 5%;
+            border-style: none;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 15px;
+        }
+        .icon {
+            position: absolute;
+            bottom: 270px;
+            left: 20%;
+            transform: translateX(-50%);
+        }
+        .icon1, .icon2, .icon3 {
+            display: flex;
+            position: absolute;
+            bottom: 5%;
+        }
+        .icon1 { left: 5%; }
+        .icon2 { left: 40%; }
+        .icon3 { left: 75%; }
+        .words1 a:nth-child(1), .words1 a:nth-child(2), .words1 a:nth-child(3) {
+            position: absolute;  
+            font-size: 12px;
+            bottom: 4%;
+        }
+        .words1 a:nth-child(1) { left: 5%; }
+        .words1 a:nth-child(2) { left: 40%; }
+        .words1 a:nth-child(3) { left: 75%; }
+        .phone, .email, .helpdesk {
+            position: absolute;
+            bottom: 8%;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+        }
+        .phone { position: absolute; bottom: 35px; left: 5%; }
+        .email { position: absolute; bottom: 35px; left: 40%; }
+        .helpdesk { position: absolute; bottom: 35px; left: 75%; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="green">
+                <img class="map" src="nuotraukos/maps.png">
+                <div class="map1">
+                    <p>Headquarters</p>
+                    <p>Company s. r. o.</p>
+                    <p>Street. 51</p>
+                    <p>100 00 Prague</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bandymas">
+        <div class="text">
+            <h1>Get in <span>touch</span></h1>
+            <p class="text1">Enim tempor eget pharetra facilisis sed maecenas <br>adispiscing. Eu leo molestie vel, ornare non id blandit <br>netus</p>
+        </div>
+        <div class="lentele">
+            <div class="kontaktai">
+                <p>Contact name</p>
+                <hr>
+            </div>
+            <div class="kontaktai1">
+                <p>Street</p>
+                <hr>
+            </div>
+            <div class="kontaktai2">
+                <p>City</p>
+                <hr>
+            </div>
+            <div class="kontaktai3">
+                <p>Postcode</p>
+                <hr>
+            </div>
+            <div class="kontaktai4">
+                <p>Contact Phone</p>
+                <hr>
+            </div>
+            <div class="kontaktai5">
+                <p>E-mail</p>
+                <hr>
+            </div>
+            <div class="kontaktai6">
+                <p>Let's talk about your idea</p>
+                <hr>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="text" class="upload" placeholder="Upload Additional file" required>
+        <p class="attach">Attach file. File size of your documents should not exceed 10MB</p>
+        <p class="attach1">I want to protect my data by signing an NDA</p>
+        <div class="small-box"></div>
+        <button>Submit</button>
+        <i class="bi bi-upload icon"></i>
+        <i class="bi bi-telephone-outbound icon1"></i>
+        <i class="bi bi-envelope-paper-heart-fill icon2"></i>
+        <i class="bi bi-envelope-check-fill icon3"></i>
+        <div>
+            <h6 class="phone">Phone</h6>
+            <h6 class="email">E-MAIL</h6>
+            <h6 class="helpdesk">HELPDESK</h6>
+        </div>
+        <div class="words1">
+            <a href="">111 111 111</a>
+            <a href="">info@company.com</a>
+            <a href="">www.helpdesk.com</a>
+        </div>
+    </div>
+</body>
+</html>

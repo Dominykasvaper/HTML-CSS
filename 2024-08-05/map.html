@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+    <style>
+       * {
+            box-sizing: border-box;
+            
+        }
+        body {
+            height: 100vh;
+            background-image: url(nuotraukos/background.png);
+            margin: 0 auto;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box {
+            background-color: white;
+            height: 95%;
+            width: 60%;
+            border-radius: 50px;
+            border: solid black 1px;
+            position: relative;
+            top: 70px;
+        }
+        .green {
+            background-color: #6DE1C2;
+            height: 100%;
+            width: 30%;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 70%;
+            position: relative; 
+        }
+        .map {
+            width: 550px;
+            height: 625px;
+            margin-right: 335px;
+            margin-bottom: 150px;
+            position: relative;
+            top: 30px;
+        }
+        .map1 {
+          height: 80px;
+          width: 120px; 
+          background-color: white;
+          color: #0982FE;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          border-radius: 10px;
+          border: solid black 1px;
+          position: absolute; 
+          right: 420px; 
+          top: 40px; 
+          font-size: 12px;
+          line-height: 5px;
+          padding-left: 8px;
+        }
+        .map1 p:nth-child(1) {
+            font-weight: 500;
+        }
+        .map1 p:nth-child(2) {
+            font-weight: 700;
+        }
+        .maintext {
+            position: relative;
+            right: 1300px;
+            bottom: 200px;
+        }
+        .text {
+            position: absolute;
+            font-size: 20px;
+            bottom: 600px;
+            left: 450px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: 2px;
+        }
+        .text span {
+            color: #6de1c2;
+        }
+        .text1{
+            width: 100%; 
+            text-align: left;
+            font-size: 16px;
+        }
+        .kontaktai {
+            position: absolute;
+            bottom: 550px;
+            left: 450px;
+        }
+        .kontaktai1 {
+            position: absolute;
+            bottom: 500px;
+            left: 450px;
+        }
+        .kontaktai2 {
+            position: absolute;
+            bottom: 440px;
+            left: 450px;
+        }
+        .kontaktai3 {
+            position: absolute;
+            bottom: 440px;
+            left: 700px;
+        }
+        .kontaktai4 {
+            position: absolute;
+            bottom: 380px;
+            left: 450px;
+        }
+        .kontaktai5 {
+            position: absolute;
+            bottom: 320px;
+            left: 450px;
+        }
+        .kontaktai6 {
+            position: absolute;
+            bottom: 250px;
+            left: 450px;
+        }
+        .kontaktai3 hr:nth-child(2) {
+            width: 200px;
+        }
+        .lentele hr {
+            width: 450px;
+        }
+        .lentele p {
+            margin-left: 20px;
+            color: gray;
+        }
+        .kontaktai2 hr:nth-child(2) {
+            width: 230px;
+        }
+        .bandymas {
+            position: relative;
+            top: 30px
+        }
+        .bandymas h1 {
+            position: relative;
+            top: 20px;
+        }
+        .upload {
+            width: 450px;
+            height: 100px;
+            position: relative;
+            bottom: 220px;
+            left: 450px;
+            text-align: center;
+            border-style: dotted;
+        }
+    
+        .attach {
+            position: absolute;
+            bottom: 210px;
+            left: 450px;
+            color: gray;
+        }
+        .attach1 {
+            position: absolute;
+            bottom: 180px;
+            left: 480px;
+        }
+        .small-box {
+            height: 15px;
+            width: 15px;
+            position: relative;
+            bottom: 174px;
+            left: 450px;
+            background-color: white;
+            border: solid black 1px;
+        }
+        button {
+            width: 450px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            bottom: 125px;
+            left: 450px;
+            border-style: none;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 15px;
+        }
+        .icon {
+            position: absolute;
+            bottom: 300px;
+            left: 580px;
+        }
+     
+        .icon1 {
+            position: absolute;
+            display: flex;
+            bottom: 97px;
+            left: 450px;
+        }
+        .icon2 {
+            position: absolute;
+            display: flex;
+            bottom: 97px;
+            left: 542px;
+        }
+        .icon3 {
+            position: absolute;
+            display: flex;
+            bottom: 97px;
+            left: 685px;
+
+        }
+        .words1 a:nth-child(1){
+            position: absolute;  
+            gap: 55px;
+            bottom: 80px;
+            left: 475px;
+            font-size: 12px;
+        }
+        .words1 a:nth-child(2){
+            position: absolute;  
+            gap: 55px;
+            bottom: 80px;
+            left: 570px;
+            font-size: 12px;
+        }
+        .words1 a:nth-child(3){
+            position: absolute;  
+            gap: 55px;
+            bottom: 80px;
+            left: 710px;
+            font-size: 12px;
+        }
+     
+      .phone {
+            display: flex;
+            position: absolute;
+            bottom: 65px;
+            left: 475px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+      }
+      .email {
+            display: flex;
+            position: absolute;
+            bottom: 65px;
+            left: 570px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+      }
+      .helpdesk {
+            display: flex;
+            position: absolute;
+            bottom: 65px;
+            left: 710px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 14px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="green">
+                <img class="map" src="nuotraukos/maps.png">
+                <div class="map1">
+                    <p>Headquarters</p>
+                    <p>Company s. r. o.</p>
+                    <p>Street. 51</p>
+                    <p>100 00 Prague</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="bandymas">
+    <div class="text">
+        <h1>Get in <span>touch</span></h1>
+        <p class="text1">Enim tempor eget pharetra facilisis sed maecenas <br>adispiscing. Eu leo molestie vel, ornare non id blandit <br>netus</p>
+    </div>
+    <div class="lentele">
+    <div class="kontaktai">
+    <p>Contact name</p>
+    <hr>
+    </div>
+
+    <div class="kontaktai1">
+        <p>Street</p>
+        <hr>
+        </div>
+
+        <div class="kontaktai2">
+            <p>City</p>
+            <hr>
+            </div>
+
+            <div class="kontaktai3">
+                <p>Postcode</p>
+                <hr>
+                </div>
+
+                <div class="kontaktai4">
+                    <p>Contact Phone</p>
+                    <hr>
+                    </div>
+
+                    <div class="kontaktai5">
+                        <p>E-mail</p>
+                        <hr>
+                        </div>
+
+                        <div class="kontaktai6">
+                            <p>Let's talk about your idea</p>
+                            <hr>
+                            </div>
+                            
+                        </div>
+        </div>
+    </div>
+        <div>
+        <input type="text" class="upload" placeholder="Upload Additional file" required>
+        <p class="attach">Attach file. File size of your documents should not exceed 10MB</p>
+        <p class="attach1">I want to protect my data by signing an NDA</p>
+        <div class="small-box"></div>
+        <button>Submit</button>
+        <i class="bi bi-upload icon"></i>
+        <i class="bi bi-telephone-outbound icon1"></i>
+        <i class="bi bi-envelope-paper-heart-fill icon2"></i>
+        <i class="bi bi-envelope-check-fill icon3"></i>
+        
+        <div >
+        <h6 class="phone">Phone</h6>
+        <h6 class="email">E-MAIL</h6>
+        <h6 class="helpdesk">HELPDESK</h6>
+        </div>
+
+        <div class="words1">
+            <a href="" >111 111 111</a>
+            <a href="" >info@company.com</a>
+            <a href="" >www.helpdesk.com</a>
+        </div>
+    </div>
+</body>
+</html>
