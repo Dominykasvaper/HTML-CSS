@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Finalas</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        /* panaikino scroll į kaire ir dešine */
+        overflow-x: hidden;
+        height: 1030vh;
+        
+      }
+      .container {
+        width: 100%;
+        max-width: 1050px;
+        height: auto;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        position: relative;
+      }
+      /* PIRMAS BODY */
+      .frame1 {
+        max-width: 105%;
+        margin-top: 13%; 
+      }
+      .frame2 {
+        position: absolute;
+        top: 146px;
+        left: 526px;
+        transform: translateX(-50%);
+        height: 60px;
+      }
+      .buttons {
+        margin-bottom: 25px;
+        margin-right: 70%;
+      }
+      .buttons button {
+        color: black;
+        background-color: white;
+        border: 1px solid gray;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .buttons button:nth-child(2), button:nth-child(3) {
+       border: none;
+      }
+      .header-icons {
+        display: flex;
+        gap: 50px;
+        margin-top: -60px; 
+        margin-left: 90%;
+      }
+      .header-icons i {
+        font-size: 24px;
+        cursor: pointer;
+      }
+      /* ANTRAS BODY */
+      .image {
+        width: 460px;
+        height: 580px;
+        padding-top: 130px;
+        position: relative;
+        right: -20px;
+        display: block;
+      }
+     .antrasbody1 {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        gap: 50px;
+        position: relative;
+        bottom: 450px;
+        left: 525px;
+     }
+     .antrasbody2 {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        gap: 50px;
+        position: relative;
+        bottom: 450px;
+        left: 525px;
+        margin-top: 150px;
+     }
+     .antrasbody3 {
+        height: 250px;
+        width: 250px;
+        display: flex;
+        gap: 50px;
+        position: relative;
+        bottom: 870px;
+        left: 525px;
+        margin-top: 150px;
+     }
+    .antrasbodytext {
+        position: relative;
+        bottom: 840px;
+        left: 525px;
+        line-height: 35px;
+     }
+    .antrasbodytext p:nth-child(1) {
+        font-size: 12px;
+        color: gray;
+        font-family: "Poppins", sans-serif;
+     }
+    .antrasbodytext p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Poppins", sans-serif;
+     }
+   .antrasbodytext p:nth-child(3) {
+        font-size: 12px;
+        color: gray;
+        line-height: 20px;
+        font-family: "Poppins", sans-serif;
+     }
+   .move-antrasbodytext {
+        position: relative;
+        bottom: 108px;
+        left: 265px;
+     }
+   .move-antrasbodytext1 {
+        position: relative;
+        bottom: -200px;
+        left: 0;
+     }
+   .move-antrasbodytext2 {
+        position: relative;
+        bottom: -90px;
+        left: 265px;
+     }
+   .move-antrasbodytext3 {
+        position: relative;
+        bottom: 0px;
+        left: 0;
+     }
+   .move-antrasbodytext4 {
+        position: relative;
+        bottom: 110px;
+        left: 265px;
+     }
+   .kinfolk {
+        position: relative;
+        font-size: 40px;
+        bottom: 1600px;
+        left: 100px;
+        font-family: "Spectral", serif;
+     }
+   .kinfolk1 {
+        position: relative;
+        bottom: 1570px;
+        right: -150px;
+        font-family: "Spectral", serif;
+     }
+  .secondpagebutton {
+        width: 100px;
+        height: 30px;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        position: relative;
+        left: 475px;
+        bottom: 900px;
+        font-family: "Spectral", serif;
+        font-size: 15px;
+    }
+  .line {
+        position: relative;
+        width: 950px;
+        left: 50px;
+        bottom: 850px;
+        border: 1px solid black;
+    }
+  /* TREČIAS BODY */
+  .films {
+        position: relative;
+        bottom: 750px;
+        left: 50px;
+        font-size: 11px;
+  }
+  .ruben {
+        position: relative;
+        bottom: 750px;
+        left: 55px;
+        font-size: 65px;
+  }
+  .crude {
+        position: relative;
+        bottom: 450px;
+        left: 55px;
+        font-size: 16px;
+  }
+  .treciasbody {
+        position: relative;
+        bottom: 950px;
+        left: 650px;
+        width: 350px;
+        height: 500px;
+  }
+  .treciasbody1 {
+        position: relative;
+        width: 1050px;
+        left: 0;
+        bottom: 850px;
+  }
+  .current {
+    position: relative;
+    bottom: 750px;
+    left: 483px;
+    font-family: "Spectral", serif;
+    font-size: 11px;
+  }
+  .treciasbodyfoto {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 700px;
+    gap: 9px;
+  }
+  .treciasbodytext {
+    position: relative;
+    bottom: 650px;
+    left: 425px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .treciasbodybutton {
+    position: relative;
+    bottom: 600px;
+    left: 467px;
+    width: 116px;
+    height: 39px;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: 600;
+  }
+  .treciasbodyline {
+        position: relative;
+        width: 950px;
+        left: 50px;
+        bottom: 500px;
+        border: 1px solid black;
+    }
+     /* KETVIRTAS BODY */
+     .ketvirtasbodytext {
+      position: relative;
+      bottom: 425px;
+      left: 385px;
+      font-size: 11.5px;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+     }
+   
+     .ketvirtasbodyfoto {
+     position: relative;
+     display: flex;
+     height:230px;
+     gap: 15px;
+     padding-left: 50px;
+     bottom: 375px;
+     }
+     .ketvirtasbodyfoto img:nth-child(3) {
+      height: 150px;
+     }
+     .ketvirtasbodyfoto img:nth-child(6) {
+      height: 100px;
+     }
+     .antrasbodytext20 {
+        position: relative;
+        bottom: 370px;
+        left: 50px;
+        line-height: 35px;
+     }
+ 
+     .antrasbodytext20 p:nth-child(1) {
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+     }
+    .antrasbodytext20 p:nth-child(2) {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 25px;
+     }
+   .antrasbodytext20 p:nth-child(3) {
+        font-size: 12px;
+        color: gray;
+        line-height: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 10px;
+     }
+     .position2 p:nth-child(2) {
+     font-size: 18px;
+     }
+     .position {
+      position: relative;
+      right: 290px;
+      bottom: 175px;
+     }
+     .position1 {
+      position: relative;
+      right: 120px;
+      bottom: 390px;
+     }
+     .position2 {
+      position: relative;
+      left: 40px;
+      bottom: 440px;
+     }
+     .position3 {
+      position: relative;
+      left: 200px;
+      bottom: 655px;
+     }
+     .position4 {
+      position: relative;
+      left: 363px;
+      bottom: 915px;
+     }
+     .ketvirtasbodyline {
+        position: relative;
+        width: 950px;
+        bottom: 940px;
+        border: 1px solid black;
+     }
+     /* PENKTAS BODY */
+     .penktasbody {
+      display: flex;
+      width: 150px;
+      gap: 50px; 
+      position: relative;
+      right: 272px;
+      bottom: 850px;
+     }
+     .penktasfoto {
+      height: 500px;
+     }
+     .penktastext {
+      position: relative;
+      bottom: 740px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11px;
+     }
+     .penktastext1 {
+      position: relative;
+      bottom: 680px;
+      font-size: 70px;
+      font-family: "Spectral", serif;
+     }
+     .penktastext2 {
+      position: relative;
+      bottom: 625px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+     }
+     .pedestal {
+      position: relative;
+      bottom: 550px;
+      height: 404px;
+     }
+     .scandinavia {
+      position: relative;
+      bottom: 500px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 16px;
+     }
+     .penktasbodyfoto {
+     position: relative;
+     display: flex;
+     height:250px;
+     gap: 15px;
+     padding-left: 0px;
+     bottom: 375px;
+     }
+     .penktasbodyfoto img:nth-child(2) {
+      height: 200px;
+     }
+     .penktasbodyfoto img:nth-child(3) {
+      height: 200px;
+     }
+     .penktasbodyfoto img:nth-child(4) {
+      height: 160px;
+     }
+     .penktasbodyfoto img:nth-child(5) {
+      height: 250px;
+     }
+     .penktasbodyfoto img:nth-child(6) {
+      height: 200px;
+     }
+     .penktaswidth {
+      width: 150px;
+     }
+     .antrasbodytext30 {
+        position: relative;
+        bottom: 370px;
+        left: 50px;
+        line-height: 35px;
+     }
+ 
+     .antrasbodytext30 p:nth-child(1) {
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+     }
+    .antrasbodytext30 p:nth-child(2) {
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        line-height: 25px;
+     }
+   .antrasbodytext30 p:nth-child(3) {
+        font-size: 13px;
+        color: gray;
+        line-height: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 10px;
+     }
+     .penktasposition0 {
+      position: relative;
+      right: 475px;
+      bottom: 5px;
+     }
+     .penktasposition1 {
+      position: relative;
+      right: 298px;
+      bottom: 230px;
+     }
+     .penktasposition2 {
+      position: relative;
+      left: -135px;
+      bottom: 360px;
+     }
+     .penktasposition3 {
+      position: relative;
+      left: 35px;
+      bottom: 530px;
+     }
+     .penktasposition4 {
+      position: relative;
+      left: 192px;
+      bottom: 655px;
+     }
+     .penktasposition5 {
+      position: relative;
+      left: 355px;
+      bottom: 840px;
+     }
+     .penktasposition3 p:nth-child(2) {
+      font-size: 18px;
+     }
+     .bluedress {
+      height: 750px;
+      width: 1050px;
+      position: relative;
+      bottom: 1000px;
+     }
+     .bluedresstext {
+      position: relative;
+      bottom: 1500px;
+      right: 450px;
+      color: white;
+      font-size: 13px;
+     }
+     .bluedresstext1 {
+      position: relative;
+      bottom: 1490px;
+      right: 385px;
+      font-size: 70px;
+      font-family: "Spectral", serif;
+      color: white;
+     }
+     .bluedresstext2 {
+      position: relative;
+      bottom: 1490px;
+      right: 300px;
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      color: white;
+     }
+     .bluedresstext3 {
+      position: relative;
+      bottom: 1220px;
+      font-size: 10px;
+      right: 100px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+      color: white;
+     }
+     .coolhair {
+      position: relative;
+      bottom: 1165px;
+      left: 290px;
+      height: 500px;
+     }
+     .fashiontext {
+      position: relative;
+      bottom: 1670px;
+      right: 450px;
+      font-size: 13px;
+     }
+     .urbantext {
+      position: relative;
+      bottom: 1670px;
+      right: 345px;
+      font-size: 70px;
+      font-family: "Spectral", serif;
+     }
+     .saturninetext {
+      position: relative;
+      bottom: 1410px;
+      right: 235px;
+      font-size: 15px;
+      line-height: 25px;
+     }
+     .signup {
+      position: relative;
+      bottom: 1300px;
+      font-size: 18px;
+     }
+     .footerline {
+      position: relative;
+      width: 500px;
+      bottom: 1225px;
+      color: black;
+     }
+     .footertext {
+      position: relative;
+      bottom: 1245px;
+      right: 210px;
+      font-size: 12px;
+      color: gray;
+     }
+     .footertext1 {
+      position: relative;
+      bottom: 1260px;
+      right: -230px;
+      font-size: 12px;
+      color: gray;
+     }
+     .footertext2 {
+      position: relative;
+      bottom: 1245px;
+      font-size: 14px;
+     }
+     .verysmallbox {
+      position: relative;
+      width: 12px;
+      height: 12px;
+      bottom: 1262px;
+      right: 140px;
+     }
+     .footerline1 {
+      position: relative;
+      width: 1000px;
+      bottom: 1200px;
+      border: 1px solid black;
+     }
+     .finaltext {
+      display: flex;
+      gap: 25px;
+      position: relative;
+      width: 1000px;
+      bottom: 1180px;
+     }
+     .finaltext1 {
+      display: flex;
+      gap: 25px;
+      position: relative;
+      width: 1000px;
+      bottom: 1198px;
+      left: 310px;
+     }
+     .finaltext2 {
+      display: flex;
+      gap: 25px;
+      position: relative;
+      width: 1000px;
+      bottom: 1215px;
+      left: 580px;
+     }
+    </style>
+  </head>
+  <body>
+
+    <!--PIRMAS BODY-->
+    <div class="container">
+      <div class="buttons">
+        <button>Subscribe</button>
+        <button>Issue 49</button>
+        <button>Shop</button>
+      </div>
+      <div class="header-icons">
+        <i class="bi bi-search" aria-label="Search"></i>
+        <i class="bi bi-body-text" aria-label="Text"></i>
+      </div>
+      <img class="frame1" src="finalphoto/frame1.png" alt="Frame Image"/>
+      <img class="frame2" src="finalphoto/Vector.png" alt="Frame Image"/>
+      <div>
+       <!--ANTRAS BODY-->
+       
+        <img class="image" src="finalphoto/image.png" alt="Frame Image"/>
+
+        <div class="antrasbody1">
+        <img src="finalphoto/image-1.png" alt="Frame Image"/>
+        <img src="finalphoto/image-2.png" alt="Frame Image"/>
+      </div>
+
+      <div class="antrasbody2">
+        <img src="finalphoto/image-3.png" alt="Frame Image"/>
+        <img src="finalphoto/image-4.png" alt="Frame Image"/>
+      </div>
+      <div class="antrasbodytext">
+        <p>MUSIC, ISSUE 49</p>
+        <p>Tove Lo</p>
+        <p>The pop star reflects on the big feelings<br> behind her biggest hits.</p>
+      </div>
+
+      <div class="move-antrasbodytext">
+      <div class="antrasbodytext">
+        <p>FASHION, ISSUE 49</p>
+        <p>Urban Doom</p>
+        <p>A saturnine mélange of subversive styles</p>
+      </div>
+    </div>
+
+    <div class="move-antrasbodytext1">
+    <div class="antrasbodytext">
+      <p>ARTS & CULTURE, ISSUE 49</p>
+      <p>Kunio Maekawa</p>
+      <p>A new exhibition at Kinfolk's Case Study<br>Room in tokyo.</p>
+    </div>
+  </div>
+
+    <div class="move-antrasbodytext2">
+      <div class="antrasbodytext">
+        <p>ARTS & CULTURE, ISSUE 49</p>
+        <p>Amalie Smith</p>
+        <p>The Danish arts writer finding clarity<br>between the lines.</p>
+      </div>
+    </div>  
+
+    <div class="antrasbody3">
+      <img src="finalphoto/image-5.png" alt="Frame Image"/>
+      <img src="finalphoto/image-6.png" alt="Frame Image"/>
+    </div>
+
+    <div class="move-antrasbodytext3">
+      <div class="antrasbodytext">
+        <p>ARTS & CULTURE, ISSUE 49</p>
+        <p>Karin Mamma Andersson</p>
+        <p>Inside the moody, mysterious world of<br>Sweden's preeminet painter.</p>
+      </div>
+    </div>
+
+    <div class="move-antrasbodytext4">
+      <div class="antrasbodytext">
+        <p>FILMS, ISSUE 49</p>
+        <p>Mamoudou Athie</p>
+        <p>The shape-shifting actor is on a roll</p>
+      </div>
+    </div>
+
+      <p class="kinfolk">The Art of Kinfolk</p>
+      <p class="kinfolk1">An iconic lens of life and style.</p>
+      <button class="secondpagebutton">All Stories</button>
+      <hr class="line">
+      <!--TREČIAS BODY-->
+
+      <p class="films">FILMS</p>
+      <p class="ruben">Ruben<br>Östlund</p>
+      <p class="crude"><i>Crude, contrary--and killing it: Meet the auteur of awkwardness. World by Elle<br>Hunt. Photography by Sina Ostlund.</i></p>
+      <img class="treciasbody" src="finalphoto/image-7.png" alt="Frame Image"/>
+      <img class="treciasbody1" src="finalphoto/image-8.png" alt="Frame Image"/>
+      <p class="current">CURRENT ISSUE</p>
+
+      <div class="treciasbodyfoto">
+        <img src="finalphoto/image-9.png" alt="Frame Image"/>
+        <img src="finalphoto/image-10.png" alt="Frame Image"/>
+        <img src="finalphoto/image-11.png" alt="Frame Image"/>
+      </div>
+
+      <p class="treciasbodytext">Inside the cultural powerhouse.</p>
+      <button class="treciasbodybutton">Buy now</button>
+      <hr class="treciasbodyline">
+      <!--KETVIRTAS BODY-->
+      <p class="ketvirtasbodytext">SELECTED STORIES FROM ISSUE FORTY-NINE</p>
+
+      <div class="ketvirtasbodyfoto">
+        <img src="finalphoto/image-12.png" alt="Frame Image"/>
+        <img src="finalphoto/image-13.png" alt="Frame Image"/>
+        <img src="finalphoto/image-14.png" alt="Frame Image"/>
+        <img src="finalphoto/image-15.png" alt="Frame Image"/>
+        <img src="finalphoto/image-16.png" alt="Frame Image"/>
+        <img src="finalphoto/image-17.png" alt="Frame Image"/>
+      </div>
+
+      
+        <div class="antrasbodytext20">
+          <p>ARTS & CULTURE, ISSUE 49</p>
+          <p>Karin Mamma<br>Andersson</p>
+          <p>Inside the moody,<br>mysterious world of<br>Sweden's preeminent<br>painter.</p>
+        </div>
+      </div> 
+
+        <div class="position">
+        <div class="antrasbodytext20">
+          <p>FILMS, ISSUE 49</p>
+          <p>Ruben Östlund</p>
+          <p>Crude, contary --and<br>killing it: Meet the auteur of<br>awkwardness.</p>
+      </div>
+    </div>
+
+    <div class="position1">
+      <div class="antrasbodytext20">
+        <p>MUSIC, ISSUE 49</p>
+        <p>Tove Lo</p>
+        <p>The pop star reflects on the<br>big feelings behind her<br>biggest hits.</p>
+    </div>
+  </div>
+
+  <div class="position2">
+    <div class="antrasbodytext20">
+      <p>FASHION, ISSUE 22</p>
+      <p>Day in the Life: Stine<br>Goya</p>
+      <p>Stine Goya has been a quiet<br>presence in the fashion<br>world for more than a<br>decade--first as a model,<br>then as an editor, now as a<br>designer.</p>
+  </div>
+</div>
+
+<div class="position3">
+  <div class="antrasbodytext20">
+    <p>ARTS & CULTURE, ISSUE 49</p>
+    <p>Amalie Smith</p>
+    <p>The Danish arts writer<br>finding clarity between the<br>lines.</p>
+</div>
+</div>
+
+<div class="position4">
+  <div class="antrasbodytext20">
+    <p>FILMS, ISSUE 49</p>
+    <p>Fares Fares</p>
+    <p>After almost 25 years, the<br>master actor steps behind<br>the camera.</p>
+</div>
+</div>
+<hr class="ketvirtasbodyline">
+     <!--PENKTAS BODY--> 
+     <div class="penktasbody">
+      <img class="penktasfoto" src="finalphoto/image-18.png" alt="Frame Image"/>
+      <img class="penktasfoto" src="finalphoto/image-19.png" alt="Frame Image"/>
+    </div>
+    <p class="penktastext">ARTS & CULTURE, FASHION, ISSUE 49</p>
+    <p class="penktastext1">A WORLD OF<br>DIFFERENCE</p>
+    <p class="penktastext2">A fun lesson in cultural faux pas.</p>
+    <img class="pedestal" src="finalphoto/image-20.png" alt="Frame Image"/>
+    <p class="scandinavia">SCANDINAVIA</p>
+
+    <div class="penktasbodyfoto">
+      <img class="penktaswidth" src="finalphoto/image-21.png" alt="Frame Image"/>
+      <img class="penktaswidth" src="finalphoto/image-22.png" alt="Frame Image"/>
+      <img class="penktaswidth" src="finalphoto/image-23.png" alt="Frame Image"/>
+      <img class="penktaswidth" src="finalphoto/image-24.png" alt="Frame Image"/>
+      <img class="penktaswidth" src="finalphoto/image-25.png" alt="Frame Image"/>
+      <img class="penktaswidth" src="finalphoto/image-26.png" alt="Frame Image"/>
+    </div>
+
+    <div class="penktasposition0">
+    <div class="antrasbodytext30">
+      <p>ARTS & CULTURE, ISSUE 49</p>
+      <p>Karin Mamma<br>Andersson</p>
+      <p>Inside the moody,<br>mysterious world of<br>Sweden's preeminent<br>painter.</p>
+    </div>
+  </div>
+
+  <div class="penktasposition1">
+    <div class="antrasbodytext30">
+      <p>FILMS, ISSUE, 49</p>
+      <p>Ruben Östlund</p>
+      <p>Crude, contary --and<br>killing it: Meet the auteur of<br>awkwardness.</p>
+    </div>
+  </div>
+
+  <div class="penktasposition2">
+    <div class="antrasbodytext30">
+      <p>MUSIC, ISSUE 49</p>
+      <p>Tove Lo</p>
+      <p>The pop star reflects on the<br>big feelings behind her<br>biggest hits.</p>
+    </div>
+  </div>
+
+  <div class="penktasposition3">
+    <div class="antrasbodytext30">
+      <p>FASHION, ISSUE 22</p>
+      <p>Day in the Life: Stine<br> Goya</p>
+      <p>Stine Goya has been a quiet<br>presence in the fashion<br>world for more than a<br>decade--first as a model,<br>then as an editor, now as a<br>designer.</p>
+    </div>
+  </div>
+
+  <div class="penktasposition4">
+    <div class="antrasbodytext30">
+      <p>ARTS & CULTURE, ISSUE 49</p>
+      <p>Amalie Smith</p>
+      <p>The Danish arts writer<br>finding clarity between the<br>lines</p>
+    </div>
+  </div>
+
+  <div class="penktasposition5">
+    <div class="antrasbodytext30">
+      <p>FILMS, ISSUE 49</p>
+      <p>Fares Fares</p>
+      <p>After almost 25 years, the<br>master actor steps behind<br>the camera.</p>
+    </div>
+  </div>
+
+  <img class="bluedress" src="finalphoto/image-29.png" alt="Frame Image"/>
+  <p class="bluedresstext">MUSIC</p>
+  <p class="bluedresstext1">TOVE<br>LO</p>
+  <p class="bluedresstext2">The pop star reflects on the big feelings behind her biggest hits.</p>
+  <p class="bluedresstext3">Nillson wears a top and skirt by MELITTA BAUMEISTER, a shirt by MARC JACOBS, boots by MAISON MARTIN MARGIELA, a ring by J. HANNAH AND the stylist's own earrings.</p>
+  <img class="coolhair" src="finalphoto/image-27.png" alt="Frame Image"/>
+  <p class="fashiontext">FASHION</p>
+  <p class="urbantext">URBAN<br>DOOM</p>
+  <p class="saturninetext"><i>A saturnine mélange of subversive styles. Photography by Zhong Lin. Styling by<br>Chen Yu. Set Design by Yu Ting Tung. Hair by Juno Ko. Makeup by Sting Hsiesh.<br>Nail Art by Rong at Partner in Crime.</i></p>
+  <p class="signup">Sign up to the Kinfolk newsletter</p>
+  <hr class="footerline">
+  <p class="footertext">YOUR EMAIL</p>
+  <p class="footertext1">SUBMIT</p>
+  <p class="footertext2">I've read and accept the terms & conditions</p>
+  <i class="bi bi-square verysmallbox"></i>
+  <hr class="footerline1">
+
+  <div class="finaltext">
+    <p>Ⓒ Kinfolk 2023</p>
+    <p>Terms</p>
+    <p>Subscribe</p>
+  </div>
+
+  <div class="finaltext1">
+    <p>Facebook</p>
+    <p>Twitter</p>
+    <p>Instagram</p>
+  </div>
+
+  <div class="finaltext2">
+    <p>Website design & development by Six</p>
+  </div>
+
+    </div>
+  </body>
+</html>
